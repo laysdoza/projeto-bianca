@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE7D5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0B8ABD;
+    color: #EEE7D5;
+    text-align: center;
+    max-height: 150px;
+}
+header img{
+    width: 250px;
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+    
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.servico {
+    margin-bottom: 30px;
+    border: 2px solid #185066;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.servico h3 {
+    margin-top: 0;
+}
+
+#servicos {
+    background-color: #EEE7D5;
+}
+
+#contato {
+    background-color: #EEE7D5;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px;
+    }
+    #servicos h3{
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    #banner h2 {
+        font-size: 24px;
+    }
+
+    #banner p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .servico h3 {
+        font-size: 18px;
+    }
+
+    .servico p {
+        font-size: 14px;
+    }
+
+
+
+}
