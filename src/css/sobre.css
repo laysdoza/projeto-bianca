@@ -1,150 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-} *
-
-
-header {
-    background-color: #0B8ABD;
-    padding: 20px;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* header {
+  background-color: #0b8abd;
+  padding: 20px;
+  text-align: center;
 }
 
-body{
-    background-color: #EEE7D5;
-
+body {
+  background-color: #eee7d5;
 }
 
 h1 {
-    font-size: 36px;
-    margin: 0;
-    color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+  color: #ffffff;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #e7e6e1;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+  color: #e7e6e1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 main {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
-
 section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
 }
 
 h2 {
-    font-size: 28px;
-    margin: 0 0 20px 0;
+  font-size: 28px;
+  margin: 0 0 20px 0;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-
 ul {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 20px 0 0 0;
-    padding: 0 0 0 20px;
-  }
-  
-  ul li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    list-style: none;
-  }
-  
-  ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-image: url('./arrow-right-s-line.png'); 
-    background-size: cover;
-  }
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 20px;
+}
 
-  nav.along ul li::before {
-    content: none;
-    position: static;
-    width: auto;
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("./arrow-right-s-line.png");
+  background-size: cover;
+}
+
+nav.along ul li::before {
+  content: none;
+  position: static;
+  width: auto;
+  height: auto;
+  background-image: none;
+  background-size: auto;
+}
+
+#logo-sobre {
+  width: 20%;
+  height: auto;
+  margin: -60px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  #logo-sobre {
+    width: 80%;
     height: auto;
-    background-image: none;
-    background-size: auto;
+    margin-top: -50px;
   }
 
-  #logo-sobre{
-    width: 20%;
-    height: auto;
-    margin: -60px;
-    padding: 0;
-    border: none;
-    background: transparent;
+  nav ul li {
+    margin: 10px 0;
   }
-
-    @media screen and (max-width: 768px) {
-        main {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-        }
-        nav ul {
-            flex-direction: row;
-            align-items: center;
-            
-        }
-        #logo-sobre{
-            width: 80%;
-            height: auto;
-            margin-top: -50px;
-
-          }
-        
-        nav ul li {
-            margin: 10px 0;
-            
-            
-            
-        }
-        nav ul li a{
-        font-size: 15px;
-            
-            
-        }
-        h1{
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-        
-    }
-
-
+  nav ul li a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}

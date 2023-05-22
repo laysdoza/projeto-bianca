@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="./src/css/galeria.css">
-  <title>Galeria de Fotos</title>
+  <head>
+    <link rel="stylesheet" href="./src/css/galeria.css" />
+    <title>Galeria de Fotos</title>
+  </head>
+  <body>
+    <h1>
+      <a href="index.html"
+        ><img src="./src/imgs/image-removebg-preview.png" class="logo"
+      /></a>
+    </h1>
 
-</head>
-<body>
-  <h1> 
-    <a href="index.html"><img src="./src/imgs/image-removebg-preview.png" class="logo"></a>
-</h1>
-  
-  <div class="gallery">
-    <img src="/src/imgs/8.png" onclick="openModal('/src/imgs/8.png')">
-    <img src="/src/imgs/1.png"  onclick="openModal('/src/imgs/1.png')">
-    <img src="/src/imgs/2.png"  onclick="openModal('/src/imgs/2.png')">
-    <img src="/src/imgs/3.png"  onclick="openModal('/src/imgs/3.png')">
-    <img src="/src/imgs/4.png"  onclick="openModal('/src/imgs/4.png')">
-    <img src="/src/imgs/5.png"  onclick="openModal('/src/imgs/5.png')">
-    <img src="/src/imgs/6.png"  onclick="openModal('/src/imgs/6.png')">
-    <img src="/src/imgs/7.png"  onclick="openModal('/src/imgs/7.png')">
-    <img src="/src/imgs/9.png"  onclick="openModal('/src/imgs/9.png')">
-    <img src="/src/imgs/10.png"  onclick="openModal('/src/imgs/10.png')">
+    <div class="gallery">
+      <img src="/src/imgs/8.png" onclick="openModal('/src/imgs/8.png')" />
+      <img src="/src/imgs/1.png" onclick="openModal('/src/imgs/1.png')" />
+      <img src="/src/imgs/2.png" onclick="openModal('/src/imgs/2.png')" />
+      <img src="/src/imgs/3.png" onclick="openModal('/src/imgs/3.png')" />
+      <img src="/src/imgs/4.png" onclick="openModal('/src/imgs/4.png')" />
+      <img src="/src/imgs/5.png" onclick="openModal('/src/imgs/5.png')" />
+      <img src="/src/imgs/6.png" onclick="openModal('/src/imgs/6.png')" />
+      <img src="/src/imgs/7.png" onclick="openModal('/src/imgs/7.png')" />
+      <img src="/src/imgs/9.png" onclick="openModal('/src/imgs/9.png')" />
+      <img src="/src/imgs/10.png" onclick="openModal('/src/imgs/10.png')" />
+    </div>
 
-    
-  </div>
-
-  <div id="myModal" class="modal">
-    <script src="script.js"></script>
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-
-
-  </div>
-
+    <div id="myModal" class="modal">
+      <script src="script.js"></script>
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+  </body>
+</html>
