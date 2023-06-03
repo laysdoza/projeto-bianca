@@ -24,6 +24,12 @@ header {
   padding: 33px 9%;
 }
 
+
+body{
+  background-color: #0b8abd; 
+}
+
+
 .navlist {
   display: flex;
 }
@@ -167,6 +173,15 @@ section {
   .hero-text h5 {
     margin-bottom: 25px;
   }
+  
+header.sticky-header {
+  position: sticky;
+  background-color: #0b8abd; 
+}
+
+.sticky-header .logo img {
+  width: 65%; 
+}
 }
 @media (max-width: 1195px) {
   section {
@@ -225,6 +240,7 @@ section {
     .hero-img img {
       width: 100%;
       height: auto;
+      
     }
 
     .hero-text a {
